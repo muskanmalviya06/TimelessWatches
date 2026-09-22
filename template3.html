@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    height: 78px;
+    background-color: #292929;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.logo {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.hammer {
+    color: #ffd000;
+    font-size: 38px;
+}
+
+.timing {
+    width: 18%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.phone {
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.call-btn {
+    width: 115px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.advantages {
+    min-height: 100vh;
+    padding-top: 115px;
+    padding-bottom: 60px;
+    position: relative;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.42),
+        rgba(0, 0, 0, 0.42)),
+        url("image/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.advantages h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.yellow-line {
+    width: 105px;
+    height: 4px;
+    background-color: #ffe000;
+    margin: 0 auto 68px;
+}
+
+
+/* Cards */
+
+.cards {
+    width: 70%;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+
+    text-align: left;
+}
+.card {
+    width: 33.33%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.card img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 28px 32px 36px;
+}
+
+.card-content h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 13px;
+    line-height: 19px;
+    min-height: 58px;
+    margin-bottom: 23px;
+}
+
+
+/* Read More */
+
+.card-content button {
+    width: 125px;
+    height: 47px;
+
+    background-color: white;
+
+    color: #5877df;
+
+    border: 2px solid #5877df;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #5877df;
+    color: white;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo,
+    .timing,
+    .phone {
+        width: 50%;
+    }
+
+    .call-btn {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    .advantages {
+        padding-top: 180px;
+    }
+
+    .advantages h1 {
+        font-size: 50px;
+    }
+
+    .cards {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+   </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="hammer">⚒</span>
+            <span>Simple HTML5 Template</span>
+        </div>
+
+        <div class="timing">
+            <b>MON  SAT: 7:00 18:00</b>
+            <br>
+            <b>SUNDAY: CLOSED</b>
+        </div>
+
+        <div class="phone">
+            <b>+1-000-0000000</b>
+        </div>
+
+        <button class="call-btn">Call Now</button>
+
+    </header>
+
+
+    <!-- Main Section -->
+    <section class="advantages">
+
+        <h1>Our Advantages</h1>
+        <div class="yellow-line"></div>
+
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+
+                <img src="image/img1.jpeg" alt="Best Masters">
+
+                <div class="card-content">
+                    <h2>Best Masters</h2>
+
+                    <p>
+                        We eternally accept sufficient means to make our
+                        business manner quicker and reliable and provide
+                        you a loyal result.
+                    </p>
+
+                    <button>Read More</button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+
+                <img src="image/img2.jpeg" alt="Modern Tool">
+
+                <div class="card-content">
+                    <h2>Modern Tool</h2>
+
+                    <p>
+                        Our crew can assist with administration wind-
+                        downs, as we possess wisdom in dealing with the
+                        problems that arise.
+                    </p>
+
+                    <button>Read More</button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+
+                <img src="image/img3.jpeg" alt="Your Design">
+
+                <div class="card-content">
+                    <h2>Your Design</h2>
+
+                    <p>
+                        Find a tact for your following orders. Our purpose
+                        is to advise your manners from the view you don't
+                        have.
+                    </p>
+
+                    <button>Read More</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
