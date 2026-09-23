@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+/* Navbar */
+nav {
+    height: 46px;
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 30px;
+}
+
+
+/* Top Section */
+.top-section {
+    width: 810px;
+    margin: 30px auto 0;
+    display: flex;
+    gap: 23px;
+}
+
+.intro {
+    width: 255px;
+}
+
+.intro h2 {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.35;
+    margin-bottom: 18px;
+}
+
+.intro p {
+    color: #b5b5b5;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+.intro button {
+    background-color: #20bdc3;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+/* Travel Cards */
+.travel-card {
+    width: 255px;
+}
+
+.travel-card img {
+    width: 255px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.travel-card h3 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.travel-card p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.travel-card a {
+    display: block;
+    margin-top: 15px;
+    color: #20bdc3;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* Blog */
+.blog {
+    width: 810px;
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #444;
+}
+
+.blog-text {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* Blog Cards */
+.blog-cards {
+    display: flex;
+    gap: 24px;
+}
+
+.blog-card {
+    width: 255px;
+    box-shadow: 0 1px 5px #ddd;
+    background-color: white;
+}
+
+.blog-card img {
+    width: 255px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 20px 5px;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">About US</a>
+        <a href="#">Services</a>
+        <a href="#">FAQ</a>
+        <a href="#">Tours</a>
+        <a href="#">Our Team</a>
+    </nav>
+
+    <!-- Top Section -->
+    <section class="top-section">
+
+        <div class="intro">
+            <h2>We offer different ways<br>to travel</h2>
+
+            <p>
+                Click any text to edit or style it. Select text
+                to insert a link. Click blue "Gear" icon in the
+                top right corner to hide/show buttons, text,
+                title and change the block background.
+            </p>
+
+        </div>
+
+        <div class="travel-card">
+            <img src="image/airimg1.jpeg">
+            <h3>Travel by air</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ab cupiditate est eveniet.</p>
+            <a href="#">Read More →</a>
+        </div>
+
+        <div class="travel-card">
+            <img src="image/trainimg2.jpeg">
+            <h3>Travel by train</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ab cupiditate est eveniet.</p>
+            <a href="#">Read More →</a>
+        </div>
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <section class="blog">
+
+        <h2>Read Our Blog</h2>
+
+        <p class="blog-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Officia officiis possimus<br>
+            tempore veniam iste hic qui corrupti explicabo at error totam.
+        </p>
+
+        <div class="blog-cards">
+
+            <div class="blog-card">
+                <img src="image/seaimg3.jpeg">
+                <h3>Mediterranean sea</h3>
+            </div>
+
+            <div class="blog-card">
+                <img src="image/mountimg4.jpeg">
+                <h3>Lorem Ipsum</h3>
+            </div>
+
+            <div class="blog-card">
+                <img src="image/img5.jpeg">
+                <h3>African Savannah</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
