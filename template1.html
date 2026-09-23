@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #414141;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+}
+
+.guitar {
+    font-size: 48px;
+    color: white;
+    transform: rotate(-25deg);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a span {
+    font-size: 9px;
+}
+
+nav button {
+    border: none;
+    background-color: #69b5f5;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 13px 25px;
+    border-radius: 25px;
+}
+
+.social {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    color: #5aa9e6;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+main {
+    width: 1072px;
+    margin: auto;
+}
+
+.banner {
+    height: 161px;
+    margin-top: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.banner h1 {
+    position: absolute;
+    right: 17px;
+    top: 38px;
+
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 52px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+    margin-top: 59px;
+    margin-bottom: 44px;
+}
+
+
+.card {
+    background-color: white;
+    min-height: 448px;
+}
+
+.card > img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 12px 13px 18px;
+}
+
+.date {
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.card h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 27px;
+    font-weight: normal;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.tags {
+    color: #888;
+    font-size: 11px;
+    margin-bottom: 13px;
+}
+
+.description {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
+}
+
+.more {
+    display: block;
+    margin: 14px auto 0;
+
+    background-color: #69b5f5;
+    border: none;
+    color: white;
+
+    padding: 11px 22px;
+    border-radius: 25px;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 1100px) {
+
+    main {
+        width: 90%;
+    }
+
+    .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    nav button {
+        padding: 10px 15px;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    
+    <header class="header">
+
+        <div class="logo">
+            <span class="guitar">♬</span>
+            <span>SoundAMP</span>
+        </div>
+
+        <nav>
+            
+            <button>DOWNLOAD NOW</button>
+
+            <div class="social">
+                <span>▶</span>
+                <span>f</span>
+                <span>G</span>
+                <span>in</span>
+                <span>p</span>
+                <span>◎</span>
+                <span>♥</span>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        
+        <section class="banner">
+            <img src="image/mainimg.jpeg">
+
+            <h1>ALL EVENT</h1>
+        </section>
+
+
+        <section class="events">
+
+            <div class="card">
+
+                <img src="image/nightlaser.jpeg">
+
+                <div class="card-content">
+
+                    <p class="date">10/05/2018</p>
+
+                    <h2>Night Laser Show</h2>
+
+                    <p class="tags">#hip-hop #rnb #dance</p>
+
+                    <p class="description">
+                        We are happy to announce this special laser show.
+                    </p>
+
+                    <button class="more">See more...</button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="image/music.jpeg">
+
+                <div class="card-content">
+
+                    <p class="date">14/05/2018</p>
+
+                    <h2>Live Music</h2>
+
+                    <p class="tags">#live #rock #alternative</p>
+
+                    <p class="description">
+                        Special event for our rock fans! Live music show.
+                    </p>
+
+                    <button class="more">See more...</button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="image/dj.jpeg">
+
+                <div class="card-content">
+
+                    <p class="date">10/04/2018</p>
+
+                    <h2>DJ - Master Class</h2>
+
+                    <p class="tags">#dj #master-class</p>
+
+                    <p class="description">
+                        DJ WoodSmell will teach you new tricks; please sign up.
+                    </p>
+
+                    <button class="more">See more...</button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="image/party.jpeg">
+
+                <div class="card-content">
+
+                    <p class="date">10/04/2018</p>
+
+                    <h2>Best Night Party</h2>
+
+                    <p class="tags">#party #club</p>
+
+                    <p class="description">
+                        Our traditional event: best hits all night long.
+                    </p>
+
+                    <button class="more">See more...</button>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
